@@ -9,13 +9,17 @@ public class Main {
     public static void main(String[] args) {
 
         String[] display = getArray();
-        ArrayList<String> display2 = new ArrayList<String>();
+        ArrayList<String> display2 = getArrayList();
 
         Iterator<String> woop = new ArrayIterator(display);
 
         while (woop.hasNext()) {
             System.out.println(woop.next());
         }
+
+        System.out.println("");
+        System.out.println("De 2de iterator ... ");
+        System.out.println("");
 
         woop = display2.iterator();
 
